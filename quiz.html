@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz interactif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Quiz interactif</h1>
+
+    <form id="quiz">
+
+        <label>Nom du joueur :</label>
+        <input type="text" name="joueur" placeholder="Votre prénom">
+
+        <div class="question" id="bloc-q1">
+            <h3>Question 1 : Quel langage structure une page web ?</h3>
+            <label><input type="radio" name="q1" value="a"> CSS</label>
+            <label><input type="radio" name="q1" value="b"> HTML</label>
+            <label><input type="radio" name="q1" value="c"> Python</label>
+        </div>
+
+        <div class="question" id="bloc-q2">
+            <h3>Question 2 : Quel langage permet de styliser une page ?</h3>
+            <label><input type="radio" name="q2" value="a"> HTML</label>
+            <label><input type="radio" name="q2" value="b"> C</label>
+            <label><input type="radio" name="q2" value="c"> CSS</label>
+        </div>
+
+        <div class="question" id="bloc-q3">
+            <h3>Question 3 : Quelle méthode empêche l'envoi normal d'un formulaire ?</h3>
+            <input type="text" name="q3">
+        </div>
+
+        <div class="question" id="bloc-q4">
+            <h3>Question 4 : Quelle propriété récupère la valeur d'un champ ?</h3>
+            <select name="q4">
+                <option value="">Choisir</option>
+                <option value="textContent">textContent</option>
+                <option value="value">value</option>
+                <option value="className">className</option>
+            </select>
+        </div>
+
+        <br>
+
+        <button type="submit">Valider</button>
+        <button type="reset">Recommencer</button>
+
+    </form>
+
+    <h2 id="score"></h2>
+
+    <h2>Palmarès</h2>
+    <ol id="palmares"></ol>
+
+    <script src="js/quiz.js"></script>
+
+</body>
+</html>

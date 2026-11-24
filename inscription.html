@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Formulaire d'inscription</h1>
+
+    <form name="inscription">
+
+        <label>Prénom :</label>
+        <input type="text" name="prenom">
+
+        <br><br>
+
+        <label>Niveau :</label>
+        <select name="niveau">
+            <option value="1">Débutant</option>
+            <option value="2">Intermédiaire</option>
+            <option value="3">Avancé</option>
+        </select>
+
+        <br><br>
+
+        <label>
+            <input type="checkbox" name="charte">
+            J'accepte la charte
+        </label>
+
+        <br><br>
+
+        <button type="submit">Envoyer</button>
+
+    </form>
+
+    <p id="message"></p>
+
+    <script src="js/inscription.js"></script>
+
+</body>
+</html>
